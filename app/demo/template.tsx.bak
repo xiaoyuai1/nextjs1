@@ -1,0 +1,19 @@
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+export default function DemoTemplate({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div className="border-2 border-dashed border-black p-4 w-1/2 mx-auto mt-4">
+      <h2>我是template {count}</h2>
+      <button onClick={() => setCount(count + 1)}>{count}</button>
+      {children}
+    </div>
+  );
+}
