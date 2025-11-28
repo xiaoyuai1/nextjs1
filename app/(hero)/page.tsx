@@ -10,6 +10,6 @@ export const metadata: Metadata = {
 }
 export default function page11() {
   return (
-    <Hero imgData={img1} imgAlt={"home"} title={"home~"}></Hero>
+    <Hero imgData={img1} imgAlt={"home"} title={"home2~"}></Hero>
   );
 }
